@@ -1,0 +1,229 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+:root{
+    --text: #0b1419;
+    --background: #e3edf3;
+    --primary: #353f79;
+    --secondary: #d2c6e6;
+    --accent: #64439c;
+}
+
+.Container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    background-color: black;
+
+    padding:5px;
+
+}
+
+nav img{
+    width:3vw;
+}
+
+nav a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color:white;
+    padding:5px;
+    border:white solid 2px;
+    border-radius: 10px;
+}
+
+nav a:hover{
+    background-color: white;
+    color:black;
+    padding:15px;
+}
+
+.intro{
+    display:flex;
+    flex-direction: row-reverse;
+}
+
+.ChechenyaImg{
+    width:80vw;
+    border-radius: 10px;
+    
+}
+
+.Contact{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    background: url('../img/Chechenya.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+
+.HistoryText{
+    border: 2px solid;
+    padding:10px;
+    width:50vw;
+    border-radius: 5px;
+    background-color: lightblue;
+}
+
+.GalleryContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    border: 3px solid gray;
+    width:50vw;
+    padding:5px;
+    border-radius: 5px;
+}
+.ContactContainer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width:40vw;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.ContactContainer input{
+    height: 5vh;
+    width:10vw;
+}
+.Img1 {grid-area: 1 / 1 / 2 / 2;}
+.Img2 { grid-area: 1 / 2 / 2 / 3; }
+.Img3 { grid-area: 1 / 3 / 2 / 4; }
+.Img4 { grid-area: 2 / 1 / 3 / 2; }
+.Img5 { grid-area: 2 / 2 / 3 / 3; }
+.Img6 { grid-area: 2 / 3 / 3 / 4; }
+.Img7 { grid-area: 3 / 1 / 4 / 2; }
+.Img8 { grid-area: 3 / 2 / 4 / 3; }
+.Img9 { grid-area: 3 / 3 / 4 / 4; }
+
+.GalleryContainer img{
+    width:15vw;
+    height:25vh;
+    border:3px solid gray;
+    padding:5px;
+    border-radius: 5px;
+}
+
+.Gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ContainerHistory{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: beige;
+}
+
+.HistoryText h4{
+    padding:5px;
+}
+
+.reviews{
+    display: flex;
+    gap:10px;
+    padding:20px;
+}
+
+.review_Card img{
+    width:30%;
+    border-radius: 50%;
+    padding:5px;
+
+}
+.review_Card{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 5px;
+    width:20vw;
+    padding:10px;
+}
+
+.review_Card p{
+    width:50%;
+    text-align: inherit;
+    padding:5px;
+}
+
+
+.BookContainer{
+    height: 100vh;
+    width:100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('../img/Chechenya.png') no-repeat center center fixed;
+    background-size: cover;
+
+}
+
+.BookForm{
+    display:flex;
+    flex-direction: column;
+    width:40vw;
+    height:40vh;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.BookForm input{
+    padding:10px;
+}
+
+.BookForm button{
+    width:20vw;
+    height: 5vh;
+}
+
+.Flight_From{
+    display:flex;
+    flex-direction: column;
+}
+
+.Flight_To{
+    display:flex;
+    flex-direction: column;
+}
+
+.flight{
+    display: flex;
+    gap:10px;
+}
+
+.flight_date{
+    display: flex;
+    gap:10px;
+}
+
+.Flight_Depart{
+    display:flex;
+    flex-direction: column;
+}
+
+.Flight_Return{
+    display:flex;
+    flex-direction: column;
+}
+
